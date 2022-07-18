@@ -372,10 +372,20 @@ ul {
 
 /* Наша команда */
 /* our-team */
+.scene {
+  perspective: 600px;
+}
+.box {
+  transform: rotateY(0);
+  transition: transform 500ms linear;
+}
+.scene:hover .box {
+  transform: rotateY(-180deg);
+}
+
 .our-team {
   background-color: var(--light-grey-background);
 }
-
 .our-team-list {
   margin-top: 50px;
 }
