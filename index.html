@@ -18,8 +18,15 @@
 </head>
 
 <body>
-
-
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-button" data-modal-close>
+                <svg class="modal-icon">
+                    <use href="./img/icons.svg#close-black"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
     <!-- heder -->
     <header class="header">
         <div class="container header-container ">
@@ -44,7 +51,7 @@
                 <li class="item">
                     <a class="contacts" href="tel:+380961111111" aria-label="телефон">
                         <svg class="auth-nav-svg" width="10px" height="16px">
-                            <use href="./img/icons.svg#tel"></use>
+                            <use href="./img/icons.svg#phone"></use>
                         </svg>
                         <span>+38 096 111 11 11</span>
                     </a>
@@ -60,7 +67,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="title">Эффективные решениe для вашего бизнеса</h1>
-                <button type="button" class="button">Заказать услугу</button>
+                <button type="button" class="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -125,9 +132,18 @@
             <div class="container">
                 <h2 class="subject">Чем мы занимаемся</h2>
                 <ul class="work-list card-set">
-                    <li class="work-list-img card-set-item"><img src="img/1.jpg" alt="Пишем код" width="370"></li>
-                    <li class="work-list-img card-set-item"><img src="img/2.jpg" alt="Адаптируем" width="370"></li>
-                    <li class="work-list-img card-set-item"><img src="img/3.jpg" alt="Стилизируем" width="370"></li>
+                    <li class="work-list-img card-set-item">
+                        <img src="img/1.jpg" alt="Пишем код" width="370">
+                        <h4 class="work-text">Десктопные приложения</h4>
+                    </li>
+                    <li class="work-list-img card-set-item">
+                        <img src="img/2.jpg" alt="Адаптируем" width="370">
+                        <h4 class="work-text">Мобильные приложения</h4>
+                    </li>
+                    <li class="work-list-img card-set-item">
+                        <img src="img/3.jpg" alt="Стилизируем" width="370">
+                        <h4 class="work-text">Дизайнерские решения</h4>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -344,6 +360,7 @@
                 </ul>
             </div>
         </section>
+
     </main>
 
 
@@ -400,6 +417,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
