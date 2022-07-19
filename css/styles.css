@@ -324,10 +324,6 @@ ul {
   fill: var(--primary-text-color);
 }
 
-.advantage-svg:hover {
-  fill: var(--accent-color);
-}
-
 .advantage-subtitle {
   margin-top: 30px;
   font-style: normal;
@@ -617,10 +613,11 @@ ul {
 /* иконки */
 .footer-wrapper {
   display: flex;
-  gap: 70px;
   align-items: baseline;
 }
-
+.footer-join-us {
+  margin-left: 70px;
+}
 .footer-join-us-title {
   font-style: normal;
   font-size: 14px;
