@@ -111,10 +111,12 @@ ul {
   right: 8px;
   width: 30px;
   height: 30px;
+  padding: 0;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   background-color: var(--color-white);
   border: 1px solid rgba(0, 0, 0, 0.1);
