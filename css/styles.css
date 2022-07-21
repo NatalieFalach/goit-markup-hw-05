@@ -75,16 +75,15 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   z-index: 2;
-  transition: background-color var(--cubik);
+  transition: opacity var(--cubik);
 }
 
 .backdrop.is-hidden {
   pointer-events: none;
   opacity: 0;
-  background: rgba(0, 0, 0, 0);
   visibility: hidden;
 }
 
@@ -104,6 +103,7 @@ ul {
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 4px;
 }
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.2);
 }
